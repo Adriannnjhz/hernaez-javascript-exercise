@@ -20,9 +20,35 @@ body {
  }
 
  .section1-left {
+    width: 40%;
     flex: 1;
     text-align: center;
  }
+ 
+ .section1-left h1 {
+    font-size: 5rem;
+    font-weight: 900;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+    -webkit-text-stroke: 2px #B09561;
+ }
+
+
+/*
+.section1-left span {
+    display: inline-block;
+    transform-origin: bottom center;
+}
+
+.section1-left span:nth-child(1) { transform: rotate(-20deg); }
+.section1-left span:nth-child(2) { transform: rotate(-14deg); }
+.section1-left span:nth-child(3) { transform: rotate(-7deg); }
+.section1-left span:nth-child(4) { transform: rotate(0deg); }
+.section1-left span:nth-child(5) { transform: rotate(7deg); }
+.section1-left span:nth-child(6) { transform: rotate(14deg); }
+.section1-left span:nth-child(7) { transform: rotate(20deg); }
+*/
+
 
  .section1-right {
     overflow-y: auto;
