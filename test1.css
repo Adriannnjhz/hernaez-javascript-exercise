@@ -1,0 +1,227 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+body {
+    font-family: inter, sans-serif;
+    background-color: #002E2D;
+    color: #B09561;
+    line-height: 1.6;
+
+}
+ .section1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-items: start;
+    padding: 50px;
+ }
+
+ .section1-left {
+    flex: 1;
+    text-align: center;
+ }
+
+ .section1-right {
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+    background-color: #011E1C;
+    border: 2px solid #B09561;
+    border-radius: 10px; 
+    outline: 2px solid #B09561;
+    outline-offset: 5px;  
+    color: #FFFFFF;
+    padding: 30px;
+    max-height: 86vh;
+    width: 40%;
+    display: grid;
+    gap: 15px; 
+ }
+.section1-right::-webkit-scrollbar {
+    opacity: 0;
+    width: 8px;
+}
+.section1-right:hover::-webkit-scrollbar {
+    opacity: 1;
+}
+
+.section1-right::-webkit-scrollbar-thumb {
+    background-color: #B09561;
+    border-radius: 5px;
+}
+
+ .reg-label {
+    text-align: left;
+    margin-bottom: 20px;
+    color: #B09561;
+ }
+
+.name-row, .second-rows {
+    display: flex;        
+    gap: 15px;
+    margin-top: 15px;      
+}
+
+.name-field, .second-row-field {
+    flex: 1;              
+    display: flex;
+    flex-direction: column;
+}
+.second-row-field {
+    margin-right: 10px;
+}
+
+.name-field label, .second-row-field label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.second-field {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.second-field label {
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+
+select {
+    width: 100%;
+    padding: 15px 17px;
+    border-radius: 10px;
+    border: 1px solid #B09561;
+    background-color: #022826;
+    color: #B09561;
+    font-size: 1rem;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.third-field {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;       
+}
+
+
+input,select {
+    width: 100%;     
+    padding: 15px 17px;       
+    border-radius: 10px;       
+    border: 1px solid #B09561;    
+    background-color: #022826; 
+    color: #B09561;            
+    font-family: 'Inter', sans-serif; 
+    font-size: 1rem;           
+    outline: none;            
+    box-sizing: border-box;  
+    transition: 0.3s;        
+}
+
+#email label {
+    text-transform: lowercase;
+    margin-top: 15px;
+}
+
+.payment-label {
+    margin-top: 15px;
+}
+
+.price-guide {
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-column: span 2;
+    gap: 5px 50px;
+    
+}
+
+.pay-label {
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 15px;
+}
+.qrrpage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.dropzone {
+  position: relative;
+  width: 100%;
+  min-height: 120px;
+  border: 2px dashed #B09561;
+  border-radius: 10px;
+  background-color: #022826;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+.dropzone-text p {
+  margin: 4px 0;
+  color: #9b9a98;
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.dropzone-or {
+  display: block;
+  margin-top: 8px;
+  color: #B09561;
+  font-weight: 500;
+}
+
+.preview-container {
+  margin-top: 10px;
+}
+#preview-img {
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 8px;
+  border: 1px solid #B09561;
+}
+.upload-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #022826;
+  border: 1px solid #B09561;
+  color: #B09561;
+  font-size: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.upload-button:hover {
+  background-color: #033632;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    background-color: #B09561;
+    border: none;
+    color: #FFFFFF;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+@media (max-width: 600px) {
+    .field-row {
+        grid-template-columns: 1fr;
+    }
+}
