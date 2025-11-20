@@ -12,7 +12,7 @@
     <section class="section1">
         <div class="section1-left">    
             <!--trial arc na welcome <h1><span>W</span><span>E</span><span>L</span><span>C</span><span>O</span><span>M</span><span>E</span></h1> -->
-            <h1>WELCOME</h1>
+            <h1>WELCOME!</h1>
             <p>9 Years. 1 unforgettable night.</p>
             <p>Let's celebrate what you built this year.</p>
             <p>The referrals you gave. The connections you made. The businesses you helped grow.</p>
@@ -31,10 +31,12 @@
                     <div class="name-field">
                         <label for="first-name">First Name:</label>
                         <input type="text" id="first-name" name="first_name" placeholder="John" required>
+                        <span class="error-msg" style="color: red;"></span>
                     </div>
                     <div class="name-field">
                         <label for="last-name">Last Name:</label>
                         <input type="text" id="last-name" name="last_name" placeholder="Doe" required>
+                        <span class="error-msg" style="color: red;"></span>
                     </div>
                 </div>
 
@@ -42,7 +44,8 @@
                 <div class="second-rows">
                     <div class="second-field contact-field">
                         <label for="contact">Contact Number:</label>
-                        <input type="number" id="contact" name="guests" min="0" maxlength="12" placeholder="e.g. +639991234245" required>
+                        <input type="text" id="contact" name="guests" min="0" maxlength="12" placeholder="e.g. +639991234245" required>
+                        <span class="error-msg" style="color: red;"></span>
                     </div>
                     <div class="second-field">
                         <label for="chapter">Chapter:</label>
@@ -67,6 +70,7 @@
                 <div class="third-field">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <span class="error-msg" style="color: red;"></span>
                 </div>
 
 
@@ -120,6 +124,6 @@
 
 
     </section>
-
+<script src="test1.js"></script>
 </body>
 </html>
